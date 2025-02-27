@@ -26,7 +26,7 @@ app.get("/api/hello", function (req, res) {
 
 
 // request for date & timestamp
-app.get("/api:date?", (req, res) => {
+app.get("/api/:date?", (req, res) => {
   const data = req.params.date;
 
   if(!data){
